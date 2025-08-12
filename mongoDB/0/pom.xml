@@ -4,11 +4,11 @@
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.example</groupId>
-  <artifactId>mongo-conn-demo</artifactId>
+  <groupId>com.techcamps.mongodb</groupId>
+  <artifactId>mongo-conn</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>MongoDB Connection Demo</name>
-  <description>Projeto Maven simples para conexão ao MongoDB Atlas</description>
+  <name>MongoDB Connection Exercise</name>
+  <description>Projeto Maven para conexão ao MongoDB Atlas</description>
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -35,13 +35,13 @@
         </configuration>
       </plugin>
 
-      <!-- Para rodar a classe principal com 'mvn exec:java' -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <version>3.1.0</version>
         <configuration>
-          <mainClass>com.example.mongo.MongoDBConnection</mainClass>
+          <!-- a classe está no "default package" -->
+          <mainClass>MongoDBConnection</mainClass>
         </configuration>
       </plugin>
     </plugins>
