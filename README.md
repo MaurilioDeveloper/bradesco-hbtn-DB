@@ -2,7 +2,7 @@
 
 Maven + JPA/Hibernate + SQLite.
 
-## Como executar
+## Execução rápida
 ```bash
 mvn -q -f jpa_hibernate/pom.xml clean compile
 mvn -q -f jpa_hibernate/pom.xml exec:java -Dexec.mainClass=demo.AdministrativoApp
